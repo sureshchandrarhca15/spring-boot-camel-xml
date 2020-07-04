@@ -11,7 +11,7 @@
 
   <appender name="RSYSLOG" class="ch.qos.logback.classic.net.SyslogAppender">
     <!-- Central Rsyslog server IP -->
-    <syslogHost>172.30.62.150</syslogHost>
+    <syslogHost>10.76.107.123</syslogHost>
       <facility>LOCAL1</facility>
         <suffixPattern>%thread: %-5level %logger{36} - %msg%n</suffixPattern>
   </appender>
