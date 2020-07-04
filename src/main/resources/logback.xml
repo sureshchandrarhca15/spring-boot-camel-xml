@@ -9,6 +9,13 @@
     </encoder-->
   </appender>
 
+  <appender name="RSYSLOG" class="ch.qos.logback.classic.net.SyslogAppender">
+    <!-- tun0 interface IP of worker3 -->
+    <syslogHost>10.128.7.1</syslogHost>
+      <facility>LOCAL1</facility>
+        <suffixPattern>%thread: %-5level %logger{36} - %msg%n</suffixPattern>
+  </appender>
+
   <root level="info">
     <appender-ref ref="STDOUT" />
   </root>
